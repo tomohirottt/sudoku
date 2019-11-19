@@ -25,8 +25,8 @@ void solve(int nums[9][9])
               if (nums[i][j] == 0)
               {
                   filled = false;
-                  int machnumber = 0;
-                  int machcount = 0;
+                  int matchnumber = 0;
+                  int matchcount = 0;
                   for (int n = 1; n <=9; n++)
                   {
                       bool overlapping = false;
@@ -59,15 +59,15 @@ void solve(int nums[9][9])
 
                       if (overlapping == false)
                       {
-                          machnumber = n;
-                          machcount++;
+                          matchnumber = n;
+                          matchcount++;
                       }
 
                   }
 
-                  if (machcount == 1)
+                  if (matchcount == 1)
                   {
-                      nums[i][j] = machnumber;
+                      nums[i][j] = matchnumber;
                   }
               }
           }
